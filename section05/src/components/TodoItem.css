@@ -19,7 +19,7 @@
   color: gray;
 }
 
-.TodoItem .delete {
+.TodoItem button {
   cursor: pointer;
   background-color: rgb(239, 239, 239);
   color: gray;
