@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# React Study Project Summary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 문서는 `react_study` 폴더 내의 React 학습 프로젝트들에 대한 요약입니다.
 
-## Available Scripts
+## 📂 프로젝트 구조 및 내용
 
-In the project directory, you can run:
+### 1. [section01](./section01)
 
-### `npm start`
+- **주제**: React 기초 (Getting Started)
+- **내용**: Create React App을 이용한 기본 프로젝트 구조 파악 및 간단한 실행 테스트.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. [section02](./section02)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **주제**: React 컴포넌트와 Hooks 기초
+- **내용**:
+  - `Button`, `Counter`, `Register` 등의 다양한 컴포넌트 실습.
+  - React Hooks (`useState`, `useRef`)의 기본 사용법.
+  - Custom Hook (`useInput`) 만들어보기.
 
-### `npm test`
+### 3. [section03](./section03)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **주제**: Props와 State (데이터 흐름)
+- **내용**:
+  - `Controller`와 `Viewer` 컴포넌트를 분리하여 데이터가 어떻게 흐르는지 실습.
+  - Counter 앱을 구조화하여 Props 전달 연습.
 
-### `npm run build`
+### 4. [section04](./section04)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **주제**: 실전 프로젝트 1 - 할 일 관리 앱 (Todo List)
+- **내용**:
+  - 기본적인 CRUD (생성, 조회, 수정, 삭제) 기능이 포함된 투두 리스트 구현.
+  - `App`, `Editor`, `List`, `TodoItem` 등으로 컴포넌트 구조화.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5. [section05](./section05)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **주제**: React 최적화
+- **내용**:
+  - 할 일 관리 앱을 기반으로 렌더링 최적화 실습.
+  - `useMemo`, `useCallback`, `React.memo` 등을 활용하여 불필요한 렌더링 방지.
 
-### `npm run eject`
+### 6. [section06](./section06)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **주제**: 복잡한 상태 관리 (useReducer)
+- **내용**:
+  - `useState` 대신 `useReducer`를 사용하여 상태 관리 로직을 컴포넌트 외부로 분리.
+  - 상태 업데이트 로직을 `reducer` 함수 하나로 모듈화하여 관리.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 7. [section07](./section07)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **주제**: React 복습 및 응용 예제
+- **내용**:
+  - **쇼핑카트 (Shopping Cart)**: 상품 목록과 장바구니 기능 구현.
+  - **연락처 목록 (Contact List)**: 연락처 추가 및 리스트 출력.
+  - `section04`~`06`에서 배운 내용을 종합하여 복습 및 응용.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📝 참고 사항
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 각 섹션(folder)은 독립적인 Vite 또는 CRA 프로젝트로 구성되어 있습니다.
+- 실행하려면 해당 폴더로 이동 후 `npm install` 및 `npm run dev` (또는 `npm start`)를 실행하세요.
